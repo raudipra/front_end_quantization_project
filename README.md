@@ -12,7 +12,7 @@ npm install
 
 ### Start the app in development mode (hot-code reloading, error reporting, etc.)
 - Edit the API URL within src/pages/Index.vue, pointing to Back End Quantization Project Server.
-- ```bash
+```bash
 quasar dev
 ```
 
