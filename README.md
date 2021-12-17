@@ -1,6 +1,7 @@
 # Front End Quantization Project
 Part of: [Quantization Module](https://github.com/rluthfan/pytorch-quantization) and [Back End Quantization Project](https://github.com/raudipra/back_end_quantization_project)
-Frontend server as the interface with the user. Users can upload multiple images and choose available model to classify the images and then display the image with predicted label and inference time.
+
+This repository contains frontend server codes for quantization project. Users can upload multiple images and choose available model to classify the images and then display the image with predicted label and inference time.
 
 User Interface
 ![image](images/sample.png)
