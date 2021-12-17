@@ -35,7 +35,7 @@
           <div class="col-6">
             <q-img :src="item.url" style="max-width: 300px; height: 150px;">
               <div class="absolute-bottom text-subtitle1 text-center">
-                {{ item.label }} ({{ item.confidence }}), {{ item.inference_time }} ms
+                {{ item.label }}, {{ item.inference_time }} ms
               </div>
             </q-img>
           </div>
@@ -50,7 +50,7 @@ import { ref } from 'vue'
 import { useQuasar } from 'quasar'
 import { api } from 'boot/axios'
 
-const API_URL = 'http://localhost:5000/'
+const API_URL = 'http://localhost:5001/'
 
 const $q = useQuasar()
 
@@ -64,12 +64,16 @@ export default {
         value: 32
       },
       {
-        label: "8-bit Float",
+        label: "8-bit Integer",
         value: 8
       },
       {
-        label: "4-bit Float",
-        value:4
+        label: "6-bit Integer",
+        value: 6
+      },
+      {
+        label: "4-bit Integer",
+        value: 4
       },
     ]
     return {
